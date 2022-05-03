@@ -29,8 +29,8 @@ export class CursosListaComponent implements OnInit {
     private service: Cursos2Service,
     private alertService: AlertModalService,
     private router: Router,
-    private route: ActivatedRoute
-    //private modalService:BsModalService ,
+    private route: ActivatedRoute,
+    private modalService:BsModalService ,
     ) { }
 
   ngOnInit(): void {
@@ -68,11 +68,9 @@ export class CursosListaComponent implements OnInit {
     .subscribe(
       success => {
         this.onRefresh();
-
       },
       error => {
         this.alertService.showAlertDanger('Erro ao remover curso. Tente novamente mais tarde.');
-
       }
     )
   }
@@ -89,6 +87,10 @@ export class CursosListaComponent implements OnInit {
         this.deleteModalRef.hide();
       }
     );
+  }
+
+  onDeclineDelete(){
+    this.deleteModalRef.hide()
   }
 
   onEdit(id: any){
