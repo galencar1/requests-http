@@ -26,7 +26,7 @@ export class CursosListaComponent implements OnInit {
   deleteModalRef!: BsModalRef;
 
   constructor(
-    private service: Cursos2Service,
+    private service: CursosService,
     private alertService: AlertModalService,
     private router: Router,
     private route: ActivatedRoute,
