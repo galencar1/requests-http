@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  requests-http:
+    image: requests-http
+    build:
+    ports:
+      - 8081:80
