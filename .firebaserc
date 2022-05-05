@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "curso-angular-gfa": {
+      "hosting": {
+        "requests-http": [
+          "curso-angular-gfa2"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "curso-angular-gfa"
+  }
+}

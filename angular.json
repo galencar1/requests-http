@@ -103,6 +103,16 @@
             ],
             "scripts": []
           }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {
+            "prerender": false,
+            "ssr": false,
+            "browserTarget": "requests-http:build:production",
+            "firebaseProject": "curso-angular-gfa",
+            "firebaseHostingSite": "curso-angular-gfa2"
+          }
         }
       }
     }

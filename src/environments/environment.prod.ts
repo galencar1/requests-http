@@ -1,5 +1,5 @@
 export const environment = {
   production: true,
   API: '/',
-  BASE_UEL: ''
+  BASE_URL: ''
 };
